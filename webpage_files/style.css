@@ -1,4 +1,8 @@
-/* --- Basic Page Setup & Margins --- */
+/* --- Global Box Sizing (Crucial for Mobile) --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* --- Basic Page Setup & Margins --- */
 body {
   font-family: Arial, Helvetica-neue, Helvetica, sans-serif;
@@ -8,6 +12,9 @@ body {
   background-color: #fcfcfc;
   margin: 0; 
   padding: 20px 15px; 
+  /* Prevents long text/URLs from breaking the mobile layout */
+  overflow-wrap: break-word; 
+  word-wrap: break-word;
 }
 
 /* This expands your content and nav menu to the full 1000px */
@@ -15,12 +22,6 @@ body {
   max-width: 1000px; 
   margin: 0 auto; /* Centers the content nicely on the page */
   overflow: hidden;
-}
-
-/* We can remove the old 50em wide-page rule since 1000px is wider anyway */
-
-#wide-page #content {
-  max-width: 50em;
 }
 
 /* --- Typography & Headings --- */
@@ -67,7 +68,7 @@ a, a:link, a:visited {
 }
 
 a:hover {
-  color: #0056b3; /* Updated to match new nav hover */
+  color: #0056b3; 
   text-decoration: underline;
 }
 
@@ -118,6 +119,25 @@ li {
 
 .main-nav a:hover {
   color: #0056b3;
+}
+
+/* --- Modern UI Elements (Cards & Notices) --- */
+.content-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 2rem;
+  border: 1px solid #e5e7eb;
+}
+
+.notice-box {
+  background: #fef3c7; 
+  border: 1px solid #f59e0b; 
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  color: #92400e; 
 }
 
 /* --- Image & Caption Styling --- */
@@ -259,3 +279,77 @@ b {
 
 /* --- Diagram Arrows --- */
 .arrow-cell {
+  position: relative;
+}
+
+.arrow-left, .arrow-right, .arrow {
+  position: absolute;
+  top: 80%;
+  left: 0px;
+  right: 0px;
+  transform: translateY(-50%);
+}
+
+.arrow-left, .arrow-right {
+  height: 1px;
+  background-color: black;
+}
+
+.arrow {
+  height: 3px;
+  background-color: grey;
+}
+
+.arrow-right::after {
+  content: '';
+  position: absolute;
+  top: 70%;
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid grey;
+  border-right: 3px solid grey;
+  right: 0px;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.arrow-left::after {
+  content: '';
+  position: absolute;
+  top: 70%;
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid grey;
+  border-right: 3px solid grey;
+  left: 0px;
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+/* --- Mobile Adjustments & Media Queries --- */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Shrinks text slightly for mobile readability */
+    padding: 10px;   /* Reduces the empty space on the edges */
+  }
+
+  /* Stack the layout utility columns on mobile */
+  .left, .right {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+
+  /* Stack the image gallery vertically on phones */
+  .image-gallery {
+    flex-direction: column; 
+  }
+
+  .image-gallery img {
+    height: auto; /* Let images scale naturally on mobile */
+  }
+
+  /* Adjust navigation for mobile */
+  .main-nav a {
+    display: block; /* Stacks nav links so they are easy to tap */
+    margin: 10px 0;
+  }
+}
