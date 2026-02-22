@@ -1,20 +1,23 @@
 /* --- Basic Page Setup & Margins --- */
+/* --- Basic Page Setup & Margins --- */
 body {
   font-family: Arial, Helvetica-neue, Helvetica, sans-serif;
-  font-size: 18px; /* Added base font size */
+  font-size: 18px; 
   line-height: 1.6;
   color: #333333;
-  max-width: 1000px; /* Widened the container */
-  margin: 0 auto;    
-  padding: 20px 15px; /* Reduced the inner buffer */
   background-color: #fcfcfc;
+  margin: 0; 
+  padding: 20px 15px; 
 }
 
+/* This expands your content and nav menu to the full 1000px */
 #content {
-  max-width: 40em;
+  max-width: 1000px; 
+  margin: 0 auto; /* Centers the content nicely on the page */
   overflow: hidden;
-  margin: auto;
 }
+
+/* We can remove the old 50em wide-page rule since 1000px is wider anyway */
 
 #wide-page #content {
   max-width: 50em;
