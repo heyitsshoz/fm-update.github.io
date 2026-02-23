@@ -20,6 +20,7 @@ body {
 /* This expands your content and nav menu to the full 1000px */
 #content {
   max-width: 1000px; 
+  width: 100%;
   margin: 0 auto; /* Centers the content nicely on the page */
   overflow: hidden;
 }
