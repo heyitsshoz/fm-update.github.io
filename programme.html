@@ -30,6 +30,84 @@
         color: #0056b3;
         text-decoration: underline;
       }
+
+      /* Schedule */
+      .schedule-intro {
+        margin-bottom: 30px;
+      }
+      .day-block {
+        margin-bottom: 32px;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .day-header {
+        background-color: #1a365d;
+        color: #ffffff;
+        padding: 12px 20px;
+        margin: 0;
+        font-size: 1.1em;
+        font-weight: bold;
+        line-height: 1.3;
+      }
+      .schedule-table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+      .schedule-table th:nth-child(1) { width: 24%; }
+      .schedule-table th:nth-child(2) { width: 33%; }
+      .schedule-table th:nth-child(3) { width: 43%; }
+      .schedule-table th {
+        background-color: #eaeaea;
+        color: #1a365d;
+        text-align: left;
+        padding: 10px 16px;
+        font-size: 0.78em;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        border-bottom: 2px solid #d4d4d4;
+      }
+      .schedule-table td {
+        padding: 12px 16px;
+        border-bottom: 1px solid #ededed;
+        vertical-align: top;
+      }
+      .schedule-table tbody tr:last-child td {
+        border-bottom: none;
+      }
+      .time-cell {
+        color: #1a365d;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+      .speaker-cell {
+        font-weight: bold;
+      }
+      .break-row td {
+        background-color: #f6f6f4;
+        font-style: italic;
+        color: #777777;
+        text-align: center;
+        font-size: 0.9em;
+      }
+      .special-row td {
+        background-color: #eef3fa;
+        color: #1a365d;
+        font-weight: bold;
+      }
+      @media screen and (max-width: 768px) {
+        .schedule-table th,
+        .schedule-table td {
+          padding: 10px 10px;
+        }
+        .schedule-table th:nth-child(1) { width: 36%; }
+        .schedule-table th:nth-child(2) { width: 32%; }
+        .schedule-table th:nth-child(3) { width: 32%; }
+        .time-cell {
+          white-space: normal;
+        }
+      }
     </style>
   </head>
 
@@ -54,18 +132,198 @@
       <div class="entry" style="padding-top: 20px;">
         
         <h2>Meeting Programme</h2>
-        <p>The detailed schedule for July 1 to 4, 2026, will be updated here closer to the event dates.</p>
+        <p class="schedule-intro">The schedule for FM Update 2026 is given below. Talk titles will be added soon.</p>
         
-        <table style="width: 100%; text-align: left; border-collapse: collapse; margin-top: 20px;">
-          <tr style="border-bottom: 1px solid #ccc;">
-            <th style="padding: 10px;">Time</th>
-            <th style="padding: 10px;">Session</th>
-          </tr>
-          <tr>
-            <td style="padding: 10px;">09:00 AM</td>
-            <td style="padding: 10px;">Welcome & Registration</td>
-          </tr>
-        </table>
+        <div class="day-block">
+          <h3 class="day-header">July 1, 2026</h3>
+          <table class="schedule-table">
+            <thead>
+              <tr><th>Time</th><th>Speaker</th><th>Title</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time-cell">9:00 PM &ndash; 10:00 PM</td>
+                <td class="speaker-cell">Shibashis Guha</td>
+                <td>Tutorial on Reactive Synthesis</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="day-block">
+          <h3 class="day-header">July 2, 2026</h3>
+          <table class="schedule-table">
+            <thead>
+              <tr><th>Time</th><th>Speaker</th><th>Title</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time-cell">9:00 AM &ndash; 9:30 AM</td>
+                <td class="speaker-cell">Lakshmi Narayanan</td>
+                <td>Opening Remarks</td>
+              </tr>
+              <tr>
+                <td class="time-cell">9:30 AM &ndash; 10:00 AM</td>
+                <td class="speaker-cell">Sujatha Ghosh</td>
+                <td>A Modal Approach Towards Substitutions</td>
+              </tr>
+              <tr>
+                <td class="time-cell">10:00 AM &ndash; 10:30 AM</td>
+                <td class="speaker-cell"></td>
+                <td></td>
+              </tr>
+              <tr class="break-row">
+                <td colspan="3">Tea Break &middot; 10:30 AM &ndash; 10:45 AM</td>
+              </tr>
+              <tr>
+                <td class="time-cell">10:45 AM &ndash; 11:15 AM</td>
+                <td class="speaker-cell"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-cell">11:15 AM &ndash; 11:45 AM</td>
+                <td class="speaker-cell">Ashish Mishra</td>
+                <td>Refinement Types: A Powerful Machinery for Verification, Synthesis and Testing</td>
+              </tr>
+              <tr class="break-row">
+                <td colspan="3">Tea Break &middot; 11:45 AM &ndash; 12:00 PM</td>
+              </tr>
+              <tr>
+                <td class="time-cell">12:00 PM &ndash; 12:30 PM</td>
+                <td class="speaker-cell"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-cell">12:30 PM &ndash; 1:00 PM</td>
+                <td class="speaker-cell">Subodh Sharma</td>
+                <td></td>
+              </tr>
+              <tr class="break-row">
+                <td colspan="3">Lunch Break &middot; 1:00 PM &ndash; 2:30 PM</td>
+              </tr>
+              <tr>
+                <td class="time-cell">2:30 PM &ndash; 3:00 PM</td>
+                <td class="speaker-cell"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-cell">3:00 PM &ndash; 3:30 PM</td>
+                <td class="speaker-cell"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-cell">3:30 PM &ndash; 4:00 PM</td>
+                <td class="speaker-cell">Shweta Rajiv</td>
+                <td>Bridging Bit-Vectors and Natural Numbers in Isabelle/HOL</td>
+              </tr>
+              <tr class="break-row">
+                <td colspan="3">Tea Break &middot; 4:00 PM &ndash; 4:30 PM</td>
+              </tr>
+              <tr>
+                <td class="time-cell">4:30 PM &ndash; 5:00 PM</td>
+                <td class="speaker-cell">Ramit Das</td>
+                <td>Verifying Error Correction Coding Algorithms using Symbolic Trajectory Evaluation</td>
+              </tr>
+              <tr class="special-row">
+                <td colspan="3" style="text-align: center;">Banquet</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="day-block">
+          <h3 class="day-header">July 3, 2026</h3>
+          <table class="schedule-table">
+            <thead>
+              <tr><th>Time</th><th>Speaker</th><th>Title</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time-cell">9:30 AM &ndash; 10:00 AM</td>
+                <td class="speaker-cell"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-cell">10:00 AM &ndash; 10:30 AM</td>
+                <td class="speaker-cell"></td>
+                <td></td>
+              </tr>
+              <tr class="break-row">
+                <td colspan="3">Tea Break &middot; 10:30 AM &ndash; 10:45 AM</td>
+              </tr>
+              <tr>
+                <td class="time-cell">10:45 AM &ndash; 11:15 AM</td>
+                <td class="speaker-cell"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-cell">11:15 AM &ndash; 11:45 AM</td>
+                <td class="speaker-cell">Pranshu Gaba</td>
+                <td>Sure-Almost-Sure and Sure-Limit-Sure Window Mean Payoff in Markov Decision Processes</td>
+              </tr>
+              <tr class="break-row">
+                <td colspan="3">Tea Break &middot; 11:45 AM &ndash; 12:00 PM</td>
+              </tr>
+              <tr>
+                <td class="time-cell">12:00 PM &ndash; 12:30 PM</td>
+                <td class="speaker-cell">Akshay S.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-cell">12:30 PM &ndash; 1:00 PM</td>
+                <td class="speaker-cell">Deepak D'Souza</td>
+                <td></td>
+              </tr>
+              <tr class="break-row">
+                <td colspan="3">Lunch Break &middot; 1:00 PM &ndash; 2:30 PM</td>
+              </tr>
+              <tr>
+                <td class="time-cell">2:30 PM &ndash; 3:00 PM</td>
+                <td class="speaker-cell">Sumanth Prabhu</td>
+                <td>On Robustness of Linear Classifiers to Targeted Data Poisoning</td>
+              </tr>
+              <tr>
+                <td class="time-cell">3:00 PM &ndash; 3:30 PM</td>
+                <td class="speaker-cell">Amaldev Manuel</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-cell">3:30 PM &ndash; 4:00 PM</td>
+                <td class="speaker-cell">Neeraj Krishnan K</td>
+                <td>On Generalised Star Height</td>
+              </tr>
+              <tr class="break-row">
+                <td colspan="3">Tea Break &middot; 4:00 PM &ndash; 4:30 PM</td>
+              </tr>
+              <tr>
+                <td class="time-cell">4:30 PM &ndash; 5:00 PM</td>
+                <td class="speaker-cell">Sreejith A V</td>
+                <td>Regular Expressions over Countable Words</td>
+              </tr>
+              <tr>
+                <td class="time-cell">5:00 PM &ndash; 5:30 PM</td>
+                <td class="speaker-cell">Supratik Chakraborty</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="day-block">
+          <h3 class="day-header">July 4, 2026</h3>
+          <table class="schedule-table">
+            <thead>
+              <tr><th>Time</th><th>Speaker</th><th>Title</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time-cell">10:00 AM onwards</td>
+                <td class="speaker-cell">Society for Electronic Transactions and Security</td>
+                <td>Applied Formal Methods in Cryptography</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
       </div>
       </div>
