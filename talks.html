@@ -51,12 +51,144 @@
       </nav>
 
       
-<div class="entry" style="padding-top: 20px;">
-        <h2>Accepted Talks</h2>
-        <p>A list of abstracts and presentations will be published here once the call is concluded.</p>
-        <ul>
-          <li><em>Talk titles will appear here...</em></li>
-        </ul>
+<style>
+      .talk-entry {
+        margin-bottom: 28px;
+        padding: 20px 24px;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        background-color: #fafbfc;
+      }
+      .talk-title {
+        font-size: 1.05em;
+        font-weight: bold;
+        color: #1a365d;
+        margin: 0 0 6px 0;
+      }
+      .talk-speaker {
+        font-size: 0.95em;
+        color: #555;
+        margin: 0 0 12px 0;
+      }
+      .talk-abstract {
+        font-size: 0.95em;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+        text-align: justify;
+      }
+      .section-heading {
+        color: #1a365d;
+        border-bottom: 2px solid #1a365d;
+        padding-bottom: 6px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+    </style>
+
+    <div class="entry" style="padding-top: 20px;">
+      <h2>Talks and Abstracts</h2>
+
+      <h3 class="section-heading">Tutorials</h3>
+
+      <div class="talk-entry">
+        <p class="talk-title">Tutorial on Reactive Synthesis</p>
+        <p class="talk-speaker">Shibashis Guha</p>
+        <p class="talk-abstract">Reactive synthesis is the problem of automatically constructing a system that interacts continuously with an environment while satisfying a formal specification. Instead of verifying a manually designed controller, synthesis aims to generate a correct-by-construction implementation directly from the specification itself. A central framework for this area is synthesis from Linear Temporal Logic (LTL), where desired behaviors are expressed using temporal operators describing how the system should evolve over infinite executions. The origins of the field trace back to the seminal &ldquo;Church synthesis problem,&rdquo; posed by Alonzo Church in the 1950s, which asked whether one can automatically construct a machine satisfying a logical specification against all possible inputs from an adversarial environment. Church&rsquo;s question established the deep connection between logic, automata, and infinite games that still underpins modern reactive synthesis. Since then, LTL synthesis has become a foundational topic in formal methods, with applications ranging from hardware design and communication protocols to robotics and autonomous systems, while also driving major advances in automata theory, game theory, and algorithmic verification.</p>
       </div>
+
+      <h3 class="section-heading">Invited Talks</h3>
+
+      <div class="talk-entry">
+        <p class="talk-title">Intruder Theories</p>
+        <p class="talk-speaker">S. P. Suresh</p>
+        <p class="talk-abstract">The Dolev-Yao model is the primary abstraction used in the symbolic analysis of cryptographic protocols. In this model, cryptographic operations are abstracted as operators in a term algebra and rules in a formal derivation system on messages. Special properties of some cryptographic operations like XOR, homomorphic encryption etc. are modelled as equation (or rewrite) theories, called &ldquo;intruder theories&rdquo; in the literature. In this lecture, we introduce the example of XOR, study its equation theory and how it can be incorporated into the derivation system. We also study the verification problem for protocols that use XOR, and we study a further extension to the protocol model that communicates assertions as well as terms.</p>
+        <p class="talk-speaker" style="margin-top: 10px; font-style: italic;">Joint work with R Ramanujam (Azim Premji University) and Vaishnavi Sundararajan (IIT Delhi).</p>
+      </div>
+
+      <div class="talk-entry">
+        <p class="talk-title">Edit Distance of Finite State Transducers</p>
+        <p class="talk-speaker">Aiswarya C.</p>
+        <p class="talk-abstract">We lift metrics over words to metrics over word-to-word transductions, by defining the distance between two transductions as the supremum of the distances of their respective outputs over all inputs. This allows to compare transducers beyond equivalence. Two transducers are close (resp. k-close) with respect to a metric if their distance is finite (resp. at most k). Over integer-valued metrics computing the distance between transducers is equivalent to deciding the closeness and k-closeness problems. For common integer-valued edit distances such as Hamming, transposition, conjugacy and Levenshtein family of distances, we show that the closeness and the k-closeness problems are decidable for functional transducers. Hence, the distance with respect to these metrics is also computable. Finally, we relate the notion of distance between functions to the notions of diameter of a relation and index of a relation in another. We show that computing edit distance between functional transducers is equivalent to computing diameter of a rational relation and both are a specific instance of the index problem of rational relations.</p>
+        <p class="talk-speaker" style="margin-top: 10px; font-style: italic;">Joint work with Amaldev Manuel and Saina Sunny (ICALP&rsquo;24).</p>
+      </div>
+
+      <div class="talk-entry">
+        <p class="talk-title">Regular Expressions over Countable Words</p>
+        <p class="talk-speaker">Sreejith A V</p>
+        <p class="talk-abstract">We investigate the expressive power of regular expressions for languages of countable words and establish their expressive equivalence with logical and algebraic characterizations. Our goal is to extend the classical theory of regular languages, defined over finite words and characterized by automata, monadic second-order logic, and regular expressions, to the setting of countable words.</p>
+      </div>
+
+      <div class="talk-entry">
+        <p class="talk-title">On Generalised Star Height</p>
+        <p class="talk-speaker">Neeraj Krishnan K</p>
+        <p class="talk-abstract"><em>Abstract TBD.</em></p>
+      </div>
+
+      <div class="talk-entry">
+        <p class="talk-title">Circuit Complexity of Regular Languages</p>
+        <p class="talk-speaker">Amaldev Manuel</p>
+        <p class="talk-abstract">Many natural classes of languages defined via logic, automata, or finite semigroups form varieties, i.e., they are closed under Boolean operations, inverse morphisms, and quotients by words. This connection extends to Boolean circuits if inverse length-multiplying morphisms replace inverse morphisms; the resulting classes are called lm-varieties (Straubing, 2002). An Eilenberg-type correspondence holds: lm-varieties of languages correspond to classes of syntactic morphisms satisfying suitable HSP conditions. As an example, a strengthening of the Furst&ndash;Saxe&ndash;Sipser theorem (Parity is not in AC<sup>0</sup>) characterises the regular languages computed by constant-depth polynomial-size circuits as exactly the lm-variety QA, i.e., those whose syntactic morphisms have aperiodic stable semigroups (Barrington et al. 1992). We use the framework of lm-varieties to give an effective classification of the circuit complexity of regular languages.</p>
+        <p class="talk-speaker" style="margin-top: 10px; font-style: italic;">Joint work with Stefan G&ouml;ller (University of Kassel).</p>
+      </div>
+
+      <div class="talk-entry">
+        <p class="talk-title">On Robustness of Linear Classifiers to Targeted Data Poisoning</p>
+        <p class="talk-speaker">Sumanth Prabhu</p>
+        <p class="talk-abstract">Data poisoning is a training-time attack that undermines the trustworthiness of learned models. In a targeted data poisoning attack, an adversary manipulates the training dataset to alter the classification of a targeted test point. Given the typically large size of training dataset, manual detection of poisoning is difficult. An alternative is to automatically measure a dataset&rsquo;s robustness against such an attack. In this talk, I will present our recent result that this is an NP-complete problem for linear classifiers. I will also present our technique that finds lower and upper bounds of robustness using constraint solving.</p>
+        <p class="talk-speaker" style="margin-top: 10px; font-style: italic;">Joint work with Nakshtra Gupta, Supratik Chakraborty, and Venkatesh R. Appeared in AAAI&rsquo;26.</p>
+      </div>
+
+      <div class="talk-entry">
+        <p class="talk-title">Sure-Almost-Sure and Sure-Limit-Sure Window Mean Payoff in Markov Decision Processes</p>
+        <p class="talk-speaker">Pranshu Gaba</p>
+        <p class="talk-abstract">Given rationals &alpha; and &beta;, the sure-almost-sure problem for a quantitative objective &phi; in a Markov decision process (MDP) asks if one can simultaneously ensure that all outcomes of the MDP have &phi;-value at least &alpha; (i.e., sure &alpha; satisfaction), and with probability 1 the outcome has &phi;-value at least &beta; (i.e., almost-sure &beta; satisfaction). Moreover, if simultaneous satisfaction of objectives is possible, then one would also like to construct a strategy that achieves this. Even if both sure satisfaction and almost-sure satisfaction for an objective are known, combining the two is often non-trivial and requires novel techniques and approaches. In this talk, we look at the sure-almost-sure problem for window mean-payoff objectives. The window mean-payoff objective strengthens the standard mean-payoff objective by requiring that the average payoff from each point in the play become greater than the threshold in at most &#8467; steps. For the window mean-payoff objective, we show that while the computational complexity of the sure-almost-sure problem matches that of sure satisfaction and almost-sure satisfaction, the memory requirement of winning strategies for sure-almost-sure satisfaction is greater than that of both sure and almost-sure satisfaction.</p>
+      </div>
+
+      <div class="talk-entry">
+        <p class="talk-title">Proof Systems for QBF Synthesis: Extracting Skolem and Herbrand Functions</p>
+        <p class="talk-speaker">Supratik Chakraborty</p>
+        <p class="talk-abstract">Strategy extraction in QBF proof systems usually attempts to extract winning strategies from valid proofs. However, an alternative (and arguably more powerful) view is to extract Skolem/Herbrand functions, or equivalently synthesis of the game values at all intermediate points. In this talk, we investigate the existence and properties of such proof systems from which one can extract Skolem and Herbrand functions. We propose such a proof system for QBF, which we show is sound and complete, and from which extraction of Skolem/Herbrand functions can be performed, and game values computed, in polynomial time. We also show that this system is optimal among all proof systems that allow efficient extraction of Skolem/Herbrand functions. We provide conditional lower bound results for our new proof system and compare it to several existing/standard proof systems for QBF that have been studied in the literature, showing interesting orthogonality results. Finally, we provide a compilation algorithm that takes an arbitrary QBF and synthesizes a proof in our system, from which Skolem and Herbrand functions can be easily computed.</p>
+        <p class="talk-speaker" style="margin-top: 10px; font-style: italic;">Joint work with S. Akshay, Olaf Beyersdorff, Lea Kasche, Meena Mahajan and Luc Nicolas Spachmann. To be presented at SAT 2026.</p>
+      </div>
+
+      <div class="talk-entry">
+        <p class="talk-title">Incorrectness Proofs with Underapproximation Invariants</p>
+        <p class="talk-speaker">Gourav Takhar</p>
+        <p class="talk-abstract">Incorrectness logic provides a theoretical framework to reason about program faults. While incorrectness logic has been immensely successful at explaining bug-finding tools, automating incorrectness logic, especially its backwards variant rule has remained challenging. The tools based on incorrectness logic, instead, analyze bounded models of program using a loop unrolling rule that unrolls loops to finite bounds. While such analysis via loop unrolling is quite effective for shallow bugs, discovering deep bugs remains a challenge. In this work, we propose a new proof system, I3, that, instead of requiring backwards variants, allows partial incorrectness proofs with a new kind of invariant, the underapproximation invariant. Unlike regular invariants that must hold on all program traces, underapproximation invariants are required to hold only on a subset of traces. We also show that, under certain sufficient conditions, a partial incorrectness proof does guarantee total incorrectness. Given the success of invariant inference in automating partial correctness proofs with Floyd-Hoare logic, we believe that I3 should also be easier to automate. We implement our proof system within a prover, I3Prove, that is able to automatically infer suitable underapproximation invariants en route to incorrectness proofs. We compare I3Prove against leading bug-finding tools from the SV-COMP23 competition, viz. UAutomizer, CPAChecker, and Veriabs. We also compare it with a recent proposal, Banal, that uses abstract interpretation to reason about incorrectness claims. On our benchmark suite of 106 incorrect programs, I3Prove is able to prove the incorrectness claims in 97 programs, while the best of the baseline tools is only able to solve 69 instances.</p>
+      </div>
+
+      <div class="talk-entry">
+        <p class="talk-title">Verifying Error Correction Coding Algorithms using Symbolic Trajectory Evaluation</p>
+        <p class="talk-speaker">Ramit Das</p>
+        <p class="talk-abstract">We present a usecase of datapath/algorithmic verification in the context of Error Correction Algorithms for Hardware Systems. The lattice based symbolic simulation methodology of <a href="https://en.wikipedia.org/wiki/Symbolic_trajectory_evaluation">STE</a> comes to our rescue for this complex problem. We shall dive into what the tool promises and get a peek into industrial challenges in the domain of datapath verification.</p>
+      </div>
+
+      <div class="talk-entry">
+        <p class="talk-title">Bridging Bit-Vectors and Natural Numbers in Isabelle/HOL</p>
+        <p class="talk-speaker">Shweta Rajiv</p>
+        <p class="talk-abstract">Bit-vectors are a core tool in software and hardware verification, and modern solvers handle fixed-width bit-vectors very well using techniques like bit blasting. However, these approaches struggle with large bit widths and do not generalize to parametric bit-vectors, where the size is symbolic and reasoning must work uniformly for all widths. In this talk, I present a mechanized translation from parametric bit-vectors to natural numbers in Isabelle/HOL. The approach builds on prior work on int blasting, encoding bit-vector operations as arithmetic over naturals with explicit bounds. We show that this translation preserves semantics for a wide range of operations, including arithmetic, logical, and bit-level constructs. The formalization is developed in two styles: a shallow embedding that supports automated rewriting of bit-vector goals into natural number formulas, and a deep embedding that establishes a global correctness theorem. These results provide a sound and fully verified reduction from parametric bit-vector reasoning to natural number arithmetic.</p>
+      </div>
+
+      <div class="talk-entry">
+        <p class="talk-title">State Reachability Under Weak Memory: From Decidability Frontiers to Visibility-Guided Testing</p>
+        <p class="talk-speaker">Abhishek Kr Singh</p>
+        <p class="talk-abstract">This talk surveys the state of the art in state reachability for weak memory models (WMMs), focusing on declarative as well as operational semantics for the release-acquire (RA) fragment of C/C++. We first review the theoretical landscape: the decidability of state reachability for full C/C++ concurrency, the RA fragment, and other closely related variants restricted by different sets of axiomatic constraints. We then examine existing model checking approaches, which scale poorly, and popular testing frameworks (including probabilistic concurrency testing and concurrency fuzzers), which find bugs quickly but rarely trigger subtle visibility violations. Finally, we briefly outline our group&rsquo;s ongoing research on a visibility-guided fuzzer that generates skeleton (abstract execution) graphs and mutates skeletons to maximize behavioral diversity. This shifts testing from hoping to stumble upon weak behaviors to systematically proposing and instantiating them.</p>
+      </div>
+
+      <div class="talk-entry">
+        <p class="talk-title">Refinement Types: A Powerful Machinery for Verification, Synthesis and Testing</p>
+        <p class="talk-speaker">Ashish Mishra</p>
+        <p class="talk-abstract"><em>Abstract TBD.</em></p>
+      </div>
+
+      <div class="talk-entry">
+        <p class="talk-title">A Modal Approach Towards Substitutions</p>
+        <p class="talk-speaker">Sujata Ghosh</p>
+        <p class="talk-abstract">Substitutions play a crucial role in a wide range of contexts, from analyzing the dynamics of social opinions and conducting mathematical computations to engaging in game-theoretical analysis. For many situations, considering one-step substitutions is often adequate. Yet, for more complex cases, iterative substitutions become indispensable. In this talk, we will describe logical frameworks that model both single-step and iterative substitutions. We will explore a number of properties of these logics, including their expressive strength, Hilbert-style proof systems, and satisfiability problems. We will also establish connections between our proposed frameworks and relevant existing ones in the literature.</p>
+        <p class="talk-speaker" style="margin-top: 10px; font-style: italic;">Joint work with Dazhu Li, Fenrong Liu and Yaxin Tu.</p>
+      </div>
+
+    </div>
   </body>
 </html>
