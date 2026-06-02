@@ -49,7 +49,22 @@
         font-size: 1.1em;
         font-weight: bold;
         line-height: 1.3;
+
+        position: relative;
       }
+
+      .day-header .date {
+        position: relative;
+        z-index: 1;
+      }
+
+      .day-header .event-title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+      }
+
       .schedule-table {
         width: 100%;
         border-collapse: collapse;
@@ -133,8 +148,27 @@
         <h2>Meeting Programme</h2>
         <p class="schedule-intro">The schedule below is tentative; further details will be added in due course.</p>
         
-        <div class="day-block">
+        <!-- <div class="day-block">
           <h3 class="day-header">July 1, 2026</h3>
+          <table class="schedule-table">
+            <thead>
+              <tr><th>Time</th><th>Speaker</th><th>Title</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time-cell">9:00 PM &ndash; 10:30 PM</td>
+                <td class="speaker-cell">Shibashis Guha</td>
+                <td><a href="talks.html#guha">Tutorial on Reactive Synthesis</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div> -->
+        <div class="day-block">
+          <h3 class="day-header">
+            <span class="date">July 1, 2026</span>
+            <span class="event-title">Pre-Event Tutorial</span>
+          </h3>
+
           <table class="schedule-table">
             <thead>
               <tr><th>Time</th><th>Speaker</th><th>Title</th></tr>
@@ -150,7 +184,10 @@
         </div>
 
         <div class="day-block">
-          <h3 class="day-header">July 2, 2026</h3>
+          <h3 class="day-header">
+            <span class="date">July 2, 2026</span>
+            <span class="event-title">Main Event, Day 1</span>
+          </h3>
           <table class="schedule-table">
             <thead>
               <tr><th>Time</th><th>Speaker</th><th>Title</th></tr>
@@ -202,8 +239,8 @@
               </tr>
               <tr>
                 <td class="time-cell">2:30 PM &ndash; 3:00 PM</td>
-                <td class="speaker-cell">TBA</td>
-                <td></td>
+                <td class="speaker-cell">Siddhartha Gadgil</td>
+                <td><a href="talks.html#gadgil">Autoformalization by Combinator Code Generation</td>
               </tr>
               <tr>
                 <td class="time-cell">3:00 PM &ndash; 3:30 PM</td>
@@ -236,7 +273,10 @@
         </div>
 
         <div class="day-block">
-          <h3 class="day-header">July 3, 2026</h3>
+          <h3 class="day-header">
+            <span class="date">July 3, 2026</span>
+            <span class="event-title">Main Event, Day 2</span>
+          </h3>
           <table class="schedule-table">
             <thead>
               <tr><th>Time</th><th>Speaker</th><th>Title</th></tr>
@@ -314,7 +354,10 @@
         </div>
 
         <div class="day-block">
-          <h3 class="day-header">July 4, 2026</h3>
+          <h3 class="day-header">
+            <span class="date">July 4, 2026</span>
+            <span class="event-title">Post-Event Tutorial</span>
+          </h3>
           <table class="schedule-table">
             <thead>
               <tr><th>Time</th><th>Speaker</th><th>Title</th></tr>
