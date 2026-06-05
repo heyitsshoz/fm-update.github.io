@@ -103,42 +103,10 @@
 
       <h3 class="section-heading">Invited Talks</h3>
 
-      <div class="talk-entry" id="metta">
+      <div class="talk-entry" id="akshay">
         <p class="talk-title">TBA</p>
-        <p class="talk-speaker">Ravindra Metta</p>
+        <p class="talk-speaker">Akshay S.</p>
         <p class="talk-abstract"><em>Abstract TBD.</em></p>
-      </div>
-
-      <div class="talk-entry" id="mukherjee">
-        <p class="talk-title">Synthesizing POMDP Policies: Sampling meets Model-checking via Learning</p>
-        <p class="talk-speaker">Sayan Mukherjee</p>
-        <p class="talk-abstract">Partially Observable Markov Decision Processes (POMDPs) are the standard framework for decision-making under uncertainty. While sampling-based methods scale well, they lack formal correctness guarantees, making them unsuitable for safety-critical applications. Conversely, formal synthesis techniques provide correctness-by-construction but often struggle with scalability, as general POMDP synthesis is undecidable. To bridge this gap, we propose a synthesis framework that integrates sampling, automata learning, and model-checking. Inspired by Angluin&rsquo;s L* algorithm, our approach utilizes sampling as a membership oracle and model-checking as an equivalence oracle. This enables the synthesis of finite-state controllers with formal guarantees, provided the sampling-induced policy is regular. We establish a relative completeness result for this framework. Experimental results from our prototypical implementation demonstrate that this method successfully solves threshold-safety problems that remain challenging for existing formal synthesis tools. We believe our algorithm serves as a valuable component in a portfolio approach to tackling the inherent difficulty of POMDP synthesis problems.</p>
-        <p class="talk-speaker" style="margin-top: 10px; font-style: italic;">Joint work with Debraj Chakraborty, Anirban Majumdar, Prince Mathew and Jean-Fran&ccedil;ois Raskin. To appear in CAV 2026.</p>
-      </div>
-
-      <div class="talk-entry" id="srivathsan">
-        <p class="talk-title">Generalized Timed Automata</p>
-        <p class="talk-speaker">B. Srivathsan</p>
-        <p class="talk-abstract">Timed automata are a widely adopted formalism for modeling real-time systems, using clocks to enforce timing constraints on transitions. In this talk, we present the idea of &ldquo;future clocks&rdquo;, which are in some sense, dual to ordinary clocks. Future clocks are like timers: they predict the time to a future event, and remain active until they time out. &ldquo;Generalized timed automata&rdquo; allow both clocks and future clocks. In the talk, we will introduce this model and describe some of its properties. We will then demonstrate their usefulness in logic-to-automata translations.</p>
-        <p class="talk-speaker" style="margin-top: 10px; font-style: italic;">Based on joint works with S. Akshay, Prerak Contractor, Paul Gastin, R. Govind and Aniruddha Joshi.</p>
-      </div>
-
-      <div class="talk-entry" id="sankaran">
-        <p class="talk-title">TBA</p>
-        <p class="talk-speaker">Abhisekh Sankaran</p>
-        <p class="talk-abstract"><em>Abstract TBD.</em></p>
-      </div>
-
-      <div class="talk-entry" id="kurur">
-        <p class="talk-title">TBA</p>
-        <p class="talk-speaker">Piyush Kurur</p>
-        <p class="talk-abstract"><em>Abstract TBD.</em></p>
-      </div>
-
-      <div class="talk-entry" id="kc">
-        <p class="talk-title">From Convergence to Confidence: Push-Button Verification for Replicated Data Types</p>
-        <p class="talk-speaker">K. C. Sivaramakrishnan</p>
-        <p class="talk-abstract">Replicated Data Types (RDTs) underpin a growing class of geo-distributed applications, but what it means for an RDT to be correct, and how to prove it, remains surprisingly subtle. Strong eventual consistency guarantees only that replicas eventually agree; replication-aware linearizability further requires that whatever state they agree on is reachable by linearising the updates each replica has actually observed. A compelling specification, but one that has historically demanded painstaking, hand-written proofs. In this talk, I will trace a multi-year arc aimed at replacing those proofs with push-button verification for Mergeable Replicated Data Types (MRDTs). Automated proof assistants and, more recently, agentic proof-oriented programming are steadily eroding the need for manual scaffolding. The story, I hope, illustrates something broader: that the gap between &ldquo;we believe this merges correctly&rdquo; and &ldquo;we have proved it merges correctly&rdquo; is narrowing to the point where correct-by-construction replicated data is becoming a realistic engineering proposition rather than a research aspiration.</p>
       </div>
 
       <div class="talk-entry" id="aiswarya">
@@ -155,16 +123,16 @@
         <p class="talk-speaker" style="margin-top: 10px; font-style: italic;">Joint work with S. Akshay, Olaf Beyersdorff, Lea Kasche, Meena Mahajan and Luc Nicolas Spachmann. To be presented at SAT 2026.</p>
       </div>
 
-      <div class="talk-entry" id="dsouza">
-        <p class="talk-title">Understanding the IC3 verification algorithm</p>
-        <p class="talk-speaker">Deepak D'Souza</p>
-        <p class="talk-abstract">The IC3 algorithm for verifying safety properties was proposed by Aaron Bradley in 2011. Since then the approach has found widespread use across domains including hardware, software, and discrete-time systems. In this talk we will describe the basic algorithm in the setting of boolean systems, its extension to software verification, and try to bring out the reasons for its effectiveness.</p>
-      </div>
-
       <div class="talk-entry" id="das">
         <p class="talk-title">Verifying Error Correction Coding Algorithms using Symbolic Trajectory Evaluation</p>
         <p class="talk-speaker">Ramit Das</p>
         <p class="talk-abstract">We present a usecase of datapath/algorithmic verification in the context of Error Correction Algorithms for Hardware Systems. The lattice based symbolic simulation methodology of <a href="https://en.wikipedia.org/wiki/Symbolic_trajectory_evaluation">STE</a> comes to our rescue for this complex problem. We shall dive into what the tool promises and get a peek into industrial challenges in the domain of datapath verification.</p>
+      </div>
+
+      <div class="talk-entry" id="dsouza">
+        <p class="talk-title">Understanding the IC3 verification algorithm</p>
+        <p class="talk-speaker">Deepak D'Souza</p>
+        <p class="talk-abstract">The IC3 algorithm for verifying safety properties was proposed by Aaron Bradley in 2011. Since then the approach has found widespread use across domains including hardware, software, and discrete-time systems. In this talk we will describe the basic algorithm in the setting of boolean systems, its extension to software verification, and try to bring out the reasons for its effectiveness.</p>
       </div>
 
       <div class="talk-entry" id="gaba">
@@ -192,6 +160,12 @@
         <p class="talk-abstract"><em>Abstract TBD.</em></p>
       </div>
 
+      <div class="talk-entry" id="kurur">
+        <p class="talk-title">TBA</p>
+        <p class="talk-speaker">Piyush Kurur</p>
+        <p class="talk-abstract"><em>Abstract TBD.</em></p>
+      </div>
+
       <div class="talk-entry" id="manuel">
         <p class="talk-title">Circuit Complexity of Regular Languages</p>
         <p class="talk-speaker">Amaldev Manuel</p>
@@ -199,10 +173,23 @@
         <p class="talk-speaker" style="margin-top: 10px; font-style: italic;">Joint work with Stefan G&ouml;ller (University of Kassel).</p>
       </div>
 
+      <div class="talk-entry" id="metta">
+        <p class="talk-title">TBA</p>
+        <p class="talk-speaker">Ravindra Metta</p>
+        <p class="talk-abstract"><em>Abstract TBD.</em></p>
+      </div>
+
       <div class="talk-entry" id="mishra">
         <p class="talk-title">Refinement Types: A Powerful Machinery for Verification, Synthesis and Testing</p>
         <p class="talk-speaker">Ashish Mishra</p>
         <p class="talk-abstract"><em>Abstract TBD.</em></p>
+      </div>
+
+      <div class="talk-entry" id="mukherjee">
+        <p class="talk-title">Synthesizing POMDP Policies: Sampling meets Model-checking via Learning</p>
+        <p class="talk-speaker">Sayan Mukherjee</p>
+        <p class="talk-abstract">Partially Observable Markov Decision Processes (POMDPs) are the standard framework for decision-making under uncertainty. While sampling-based methods scale well, they lack formal correctness guarantees, making them unsuitable for safety-critical applications. Conversely, formal synthesis techniques provide correctness-by-construction but often struggle with scalability, as general POMDP synthesis is undecidable. To bridge this gap, we propose a synthesis framework that integrates sampling, automata learning, and model-checking. Inspired by Angluin&rsquo;s L* algorithm, our approach utilizes sampling as a membership oracle and model-checking as an equivalence oracle. This enables the synthesis of finite-state controllers with formal guarantees, provided the sampling-induced policy is regular. We establish a relative completeness result for this framework. Experimental results from our prototypical implementation demonstrate that this method successfully solves threshold-safety problems that remain challenging for existing formal synthesis tools. We believe our algorithm serves as a valuable component in a portfolio approach to tackling the inherent difficulty of POMDP synthesis problems.</p>
+        <p class="talk-speaker" style="margin-top: 10px; font-style: italic;">Joint work with Debraj Chakraborty, Anirban Majumdar, Prince Mathew and Jean-Fran&ccedil;ois Raskin. To appear in CAV 2026.</p>
       </div>
 
       <div class="talk-entry" id="prabhu">
@@ -218,16 +205,41 @@
         <p class="talk-abstract">Bit-vectors are a core tool in software and hardware verification, and modern solvers handle fixed-width bit-vectors very well using techniques like bit blasting. However, these approaches struggle with large bit widths and do not generalize to parametric bit-vectors, where the size is symbolic and reasoning must work uniformly for all widths. In this talk, I present a mechanized translation from parametric bit-vectors to natural numbers in Isabelle/HOL. The approach builds on prior work on int blasting, encoding bit-vector operations as arithmetic over naturals with explicit bounds. We show that this translation preserves semantics for a wide range of operations, including arithmetic, logical, and bit-level constructs. The formalization is developed in two styles: a shallow embedding that supports automated rewriting of bit-vector goals into natural number formulas, and a deep embedding that establishes a global correctness theorem. These results provide a sound and fully verified reduction from parametric bit-vector reasoning to natural number arithmetic.</p>
       </div>
 
+      <div class="talk-entry" id="sankaran">
+        <p class="talk-title">TBA</p>
+        <p class="talk-speaker">Abhisekh Sankaran</p>
+        <p class="talk-abstract"><em>Abstract TBD.</em></p>
+      </div>
+
+      <div class="talk-entry" id="sharma">
+        <p class="talk-title">TBA</p>
+        <p class="talk-speaker">Subodh Sharma</p>
+        <p class="talk-abstract"><em>Abstract TBD.</em></p>
+      </div>
+
       <div class="talk-entry" id="singh">
         <p class="talk-title">State Reachability Under Weak Memory: From Decidability Frontiers to Visibility-Guided Testing</p>
         <p class="talk-speaker">Abhishek Singh</p>
         <p class="talk-abstract">This talk surveys the state of the art in state reachability for weak memory models (WMMs), focusing on declarative as well as operational semantics for the release-acquire (RA) fragment of C/C++. We first review the theoretical landscape: the decidability of state reachability for full C/C++ concurrency, the RA fragment, and other closely related variants restricted by different sets of axiomatic constraints. We then examine existing model checking approaches, which scale poorly, and popular testing frameworks (including probabilistic concurrency testing and concurrency fuzzers), which find bugs quickly but rarely trigger subtle visibility violations. Finally, we briefly outline our group&rsquo;s ongoing research on a visibility-guided fuzzer that generates skeleton (abstract execution) graphs and mutates skeletons to maximize behavioral diversity. This shifts testing from hoping to stumble upon weak behaviors to systematically proposing and instantiating them.</p>
       </div>
 
+      <div class="talk-entry" id="kc">
+        <p class="talk-title">From Convergence to Confidence: Push-Button Verification for Replicated Data Types</p>
+        <p class="talk-speaker">K. C. Sivaramakrishnan</p>
+        <p class="talk-abstract">Replicated Data Types (RDTs) underpin a growing class of geo-distributed applications, but what it means for an RDT to be correct, and how to prove it, remains surprisingly subtle. Strong eventual consistency guarantees only that replicas eventually agree; replication-aware linearizability further requires that whatever state they agree on is reachable by linearising the updates each replica has actually observed. A compelling specification, but one that has historically demanded painstaking, hand-written proofs. In this talk, I will trace a multi-year arc aimed at replacing those proofs with push-button verification for Mergeable Replicated Data Types (MRDTs). Automated proof assistants and, more recently, agentic proof-oriented programming are steadily eroding the need for manual scaffolding. The story, I hope, illustrates something broader: that the gap between &ldquo;we believe this merges correctly&rdquo; and &ldquo;we have proved it merges correctly&rdquo; is narrowing to the point where correct-by-construction replicated data is becoming a realistic engineering proposition rather than a research aspiration.</p>
+      </div>
+
       <div class="talk-entry" id="sreejith">
         <p class="talk-title">Regular Expressions over Countable Words</p>
         <p class="talk-speaker">Sreejith A V</p>
         <p class="talk-abstract">We investigate the expressive power of regular expressions for languages of countable words and establish their expressive equivalence with logical and algebraic characterizations. Our goal is to extend the classical theory of regular languages, defined over finite words and characterized by automata, monadic second-order logic, and regular expressions, to the setting of countable words.</p>
+      </div>
+
+      <div class="talk-entry" id="srivathsan">
+        <p class="talk-title">Generalized Timed Automata</p>
+        <p class="talk-speaker">B. Srivathsan</p>
+        <p class="talk-abstract">Timed automata are a widely adopted formalism for modeling real-time systems, using clocks to enforce timing constraints on transitions. In this talk, we present the idea of &ldquo;future clocks&rdquo;, which are in some sense, dual to ordinary clocks. Future clocks are like timers: they predict the time to a future event, and remain active until they time out. &ldquo;Generalized timed automata&rdquo; allow both clocks and future clocks. In the talk, we will introduce this model and describe some of its properties. We will then demonstrate their usefulness in logic-to-automata translations.</p>
+        <p class="talk-speaker" style="margin-top: 10px; font-style: italic;">Based on joint works with S. Akshay, Prerak Contractor, Paul Gastin, R. Govind and Aniruddha Joshi.</p>
       </div>
 
       <div class="talk-entry" id="suresh">
